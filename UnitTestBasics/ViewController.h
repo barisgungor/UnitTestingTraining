@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic,strong) NSString *string1;
+-(void)updateString1;
 
 @end
 

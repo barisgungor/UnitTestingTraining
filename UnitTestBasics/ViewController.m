@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+
+
 @end
 
 @implementation ViewController
@@ -19,5 +21,9 @@
     // Do any additional setup after loading the view.
 }
 
-
+-(void)updateString1{
+    
+    _string1 = @"Hello";
+    
+}
 @end

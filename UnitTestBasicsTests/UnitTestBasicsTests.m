@@ -7,8 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface UnitTestBasicsTests : XCTestCase
+
+@property ViewController *vcToTest;
 
 @end
 
@@ -16,6 +19,7 @@
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    _vcToTest =[[ViewController alloc] init];
 }
 
 - (void)tearDown {
@@ -23,6 +27,16 @@
 }
 
 - (void)testExample {
+    
+    NSString *expectedString = @"Hello";
+    [_vcToTest updateString1];
+    NSString *resultString = _vcToTest.string1;
+    
+    XCTAssertEqualObjects(expectedString, resultString, @"testing update string");
+    
+    
+    
+    
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
