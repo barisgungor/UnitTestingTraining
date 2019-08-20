@@ -26,4 +26,10 @@
     _string1 = @"Hello";
     
 }
+
+-(void)updateInteger1{
+    
+    _int1 = [NSNumber numberWithInt:7];
+    
+}
 @end

@@ -11,7 +11,10 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic,strong) NSString *string1;
--(void)updateString1;
+@property (nonatomic,strong) NSNumber *int1;
 
+
+-(void)updateString1;
+-(void)updateInteger1;
 @end
 
